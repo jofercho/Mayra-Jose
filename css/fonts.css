@@ -1,0 +1,18 @@
+/* ===============================
+   Custom Font Declarations
+   =============================== */
+@font-face {
+  font-family: 'Perfecto Calligraphy';
+  src: url('../fonts/PerfectoCalligraphy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Palisade';
+  src: url('../fonts/Palisade.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

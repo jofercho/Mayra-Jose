@@ -1,0 +1,22 @@
+/* ===============================
+   Global Reset & Base Styles
+   =============================== */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; /* TikTok-style snap scrolling */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Playfair Display', sans-serif;
+  background: var(--soft);
+  color: var(--black);
+}

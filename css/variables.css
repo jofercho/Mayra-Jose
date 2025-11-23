@@ -1,0 +1,12 @@
+/* ===============================
+   CSS Variables & Color Scheme
+   =============================== */
+:root {
+  --gold: #D4AF37;
+  --black: #0b0b0b;
+  --white: #ffffff;
+  --soft: #f7f6f5;
+  --white-gold: #faf8f0;
+  --font-calligraphy: 'Perfecto Calligraphy', 'Playfair Display', serif;
+  --font-palisade: 'Palisade', 'Playfair Display', serif;
+}

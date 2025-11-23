@@ -1,0 +1,30 @@
+/* ===============================
+   Typography
+   =============================== */
+.title {
+  font-family: var(--font-palisade);
+  font-size: 4.5rem;
+  color: var(--black);
+  margin: 0 0 10px 0;
+}
+
+.couple {
+  font-family: var(--font-calligraphy);
+  color: #FFF;
+  text-shadow: 0 0 10px #FFC300F0, 0 0 20px var(--gold), 0 0 30px #FFF, 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+.lead {
+  font-family: var(--font-palisade);
+  font-size: 2.2rem;
+  color: var(--white-gold);
+  max-width: 600px;
+  margin: auto;
+}
+
+.section-title {
+  font-family: var(--font-palisade);
+  font-size: 4rem;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}

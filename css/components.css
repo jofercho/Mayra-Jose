@@ -190,7 +190,6 @@
 
 .detalles-info {
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .detalles-info .title {
@@ -220,7 +219,7 @@
 
 .detail-item h3 {
   font-family: var(--font-palisade);
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   color: var(--gold);
   margin: 0 0 0.8rem 0;
 }
@@ -231,4 +230,53 @@
   color: var(--black);
   margin: 0;
   line-height: 1.5;
+}
+
+/* Bank Info Toggle */
+.bank-toggle-btn {
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+}
+
+.bank-toggle-btn:hover {
+  background: #b8941f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.bank-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--gold);
+  transition: all 0.3s ease;
+}
+
+.bank-info.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.bank-info p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.bank-info strong {
+  color: var(--gold);
+  font-weight: 600;
 }

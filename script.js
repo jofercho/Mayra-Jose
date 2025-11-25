@@ -60,31 +60,58 @@ document.addEventListener('DOMContentLoaded', () => {
 // RSVP Form Handling (Anime.js v4)
 // ===============================
 document.getElementById('sendRsvp').addEventListener('click', () => {
-    const name = document.getElementById('name').value.trim();
     const msg = document.getElementById('rsvpMsg');
+    console.log('✉️ RSVP Confirmed - Opening WhatsApp');
+    
+    // Open WhatsApp link
+    window.open('https://wa.me/qr/RR2B3PGP6ZBNE1', '_blank');
+    
+});
 
-    // Validate name input
-    if (!name) {
-        // Shake animation for invalid input
-        animate('#name', {
-            translateX: [-6, 6, -4, 4, 0],
-            duration: 450,
-            ease: 'inOutSine'
+// ===============================
+// Bank Info Toggle Functionality
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('toggleBankInfo');
+    const bankInfo = document.getElementById('bankInfo');
+    
+    if (toggleBtn && bankInfo) {
+        toggleBtn.addEventListener('click', () => {
+            const isHidden = bankInfo.classList.contains('hidden');
+            
+            if (isHidden) {
+                // Show bank info
+                bankInfo.classList.remove('hidden');
+                toggleBtn.textContent = 'Ocultar detalles bancarios';
+                
+                // Animate in with Anime.js
+                animate(bankInfo, {
+                    opacity: [0, 1],
+                    maxHeight: ['0px', '120px'],
+                    paddingTop: ['0px', '1rem'],
+                    paddingBottom: ['0px', '1rem'],
+                    marginTop: ['0px', '1rem'],
+                    duration: 400,
+                    ease: 'outCubic'
+                });
+            } else {
+                // Hide bank info
+                animate(bankInfo, {
+                    opacity: [1, 0],
+                    maxHeight: ['120px', '0px'],
+                    paddingTop: ['1rem', '0px'],
+                    paddingBottom: ['1rem', '0px'],
+                    marginTop: ['1rem', '0px'],
+                    duration: 300,
+                    ease: 'outCubic',
+                    complete: () => {
+                        bankInfo.classList.add('hidden');
+                        toggleBtn.textContent = 'Pero...';
+                    }
+                });
+            }
         });
-        return;
     }
-
-    // Show success message
-    msg.style.display = 'block';
-    animate(msg, {
-        opacity: [0, 1],
-        translateY: [10, 0],
-        duration: 600,
-        ease: 'outCubic'
-    });
-
-    // Clear form
-    document.getElementById('name').value = '';
 });
 
 // ===============================

@@ -103,6 +103,31 @@
 }
 
 /* Other Sections */
+#timeline {
+  background-image: url('../images/mainBW2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 40px 20px;
+}
+
+#timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.timeline {
+  position: relative;
+  z-index: 2;
+}
+
 #detalles {
   background: linear-gradient(180deg,
       rgba(212, 175, 55, 0.1),
@@ -113,8 +138,27 @@
   background: linear-gradient(180deg,
       var(--white),
       rgba(212, 175, 55, 0.1));
+  background-image: url('../images/golf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
   padding: 40px 20px;
   justify-content: center;
+}
+
+#ubicacion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.85),
+      rgba(212, 175, 55, 0.2));
+  z-index: 1;
 }
 
 .ubicacion-content {
@@ -125,6 +169,8 @@
   gap: 1.5rem;
   max-width: 600px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .ubicacion-info {

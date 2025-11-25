@@ -22,9 +22,24 @@
   margin: auto;
 }
 
+.lead-golf {
+  font-family: var(--font-palisade);
+  font-size: 2.2rem;
+  color: #9f8310;
+  max-width: 600px;
+  margin: auto;
+}
+
 .section-title {
   font-family: var(--font-palisade);
   font-size: 4rem;
   color: var(--gold);
   margin-bottom: 2rem;
+}
+
+#timeline .section-title {
+  color: #1a1a1a;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.9), 
+               1px 1px 3px rgba(255, 255, 255, 0.7);
 }

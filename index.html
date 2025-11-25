@@ -64,7 +64,7 @@
                 </div>
                 <div class="timeline-line"></div>
                 <div class="timeline-content">
-                    <div class="timeline-time">3:30 PM</div>
+                    <div class="timeline-time">2:00 PM</div>
                     <h3>Ceremonia</h3>
                 </div>
             </div>
@@ -74,18 +74,8 @@
                 </div>
                 <div class="timeline-line"></div>
                 <div class="timeline-content">
-                    <div class="timeline-time">4:30 PM</div>
+                    <div class="timeline-time">3:30 PM</div>
                     <h3>Cóctel</h3>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <img src="./icons/SVG/CAMERA.svg" alt="Sesión de Fotos" />
-                </div>
-                <div class="timeline-line"></div>
-                <div class="timeline-content">
-                    <div class="timeline-time">5:00 PM</div>
-                    <h3>Sesión de Fotos</h3>
                 </div>
             </div>
             <div class="timeline-item">
@@ -94,8 +84,8 @@
                 </div>
                 <div class="timeline-line"></div>
                 <div class="timeline-content">
-                    <div class="timeline-time">6:30 PM</div>
-                    <h3>Recepción</h3>
+                    <div class="timeline-time">4:30 PM</div>
+                    <h3>Comidita</h3>
                 </div>
             </div>
             <div class="timeline-item">
@@ -104,8 +94,8 @@
                 </div>
                 <div class="timeline-line"></div>
                 <div class="timeline-content">
-                    <div class="timeline-time">8:00 PM</div>
-                    <h3>Fiesta de Baile</h3>
+                    <div class="timeline-time">6:00 PM</div>
+                    <h3>Bailongo</h3>
                 </div>
             </div>
         </div>
@@ -130,8 +120,13 @@
                 </div>
                 
                 <div class="detail-item">
-                    <h3>Regalos</h3>
+                    <h3>Cariñito</h3>
                     <p>Su presencia es nuestro mejor regalo.</p>
+                    <button id="toggleBankInfo" class="bank-toggle-btn">Pero...</button>
+                    <div id="bankInfo" class="bank-info hidden">
+                        <p>Mi número de Cuenta Simple Soles en Interbank es: <strong>300 3105612837</strong></p>
+                        <p>Mi número de Cuenta Interbancario (CCI) en Interbank es: <strong>00330001310561283717</strong></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,8 +136,8 @@
         <div class="ubicacion-content">
             <div class="ubicacion-info">
                 <h2 class="title">Ubicación</h2>
-                <p class="lead">Club de Golf Arequipa</p>
-                <p class="lead">Dirección: (Agregar dirección exacta)</p>
+                <p class="lead-golf">Club de Golf Arequipa</p>
+                <p class="lead-golf">Socabaya</p>
             </div>
 
             <!-- Embedded Google Map -->
@@ -163,9 +158,7 @@
     <section id="rsvp">
         <h2 class="title">Confirmar asistencia</h2>
         <form id="rsvpForm" onsubmit="return false;">
-            <input id="name" placeholder="Tu nombre"
-                style="padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem" required />
-            <button class="btn" id="sendRsvp">Enviar</button>
+            <button class="btn" id="sendRsvp">Confirmar</button>
         </form>
         <div id="rsvpMsg" class="lead" style="display:none;margin-top:10px">¡Gracias! Confirmación registrada.</div>
     </section>

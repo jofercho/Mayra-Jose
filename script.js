@@ -64,7 +64,7 @@ document.getElementById('sendRsvp').addEventListener('click', () => {
     console.log('✉️ RSVP Confirmed - Opening WhatsApp');
     
     // Open WhatsApp link
-    window.open('https://wa.me/qr/RR2B3PGP6ZBNE1', '_blank');
+    window.open('https://wa.me/51956347175?text=Hola,%20quiero%20confirmar%20mi%20asistencia', '_blank');
     
 });
 

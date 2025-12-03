@@ -289,6 +289,18 @@
   gap: 0.8rem;
 }
 
+.bank-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+}
+
 .bank-item {
   display: flex;
   align-items: center;
